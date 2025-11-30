@@ -5,6 +5,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.glasses.screens.*
 import kotlinx.coroutines.delay
 
@@ -16,7 +17,7 @@ fun NavigationStack() {
 
         // Splash screen
         composable(Screen.Splash.route) {
-            Splash() // Your splash UI
+            Splash() // Preload UI
 
             // Navigate to Home after a delay
             LaunchedEffect(Unit) {

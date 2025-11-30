@@ -18,10 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.glasses.common.CustomTextField
-import com.example.glasses.common.MainTitle
-import com.example.glasses.common.PrimaryButton
-import com.example.glasses.common.VerticalSpace
+import com.example.glasses.components.CustomTextField
+import com.example.glasses.components.MainTitle
+import com.example.glasses.components.PrimaryButton
+import com.example.glasses.components.VerticalSpace
 
 @Composable
 fun Login(navController: NavController) {

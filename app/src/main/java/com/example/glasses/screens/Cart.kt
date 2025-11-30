@@ -16,17 +16,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import com.example.glasses.ProductsViewModel
-import com.example.glasses.common.MainTitle
+import com.example.glasses.components.MainTitle
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
-import com.example.glasses.common.HorizontalSpace
+import com.example.glasses.components.HorizontalSpace
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.Modifier
-import com.example.glasses.common.BottomBar
-import com.example.glasses.common.PrimaryButton
-import com.example.glasses.common.VerticalSpace
+import com.example.glasses.components.PrimaryButton
+import com.example.glasses.components.VerticalSpace
 
 
 @SuppressLint("ViewModelConstructorInComposable")
@@ -34,9 +33,6 @@ import com.example.glasses.common.VerticalSpace
 fun Cart(navController: NavController) {
     val products = ProductsViewModel().products
     Scaffold(
-        bottomBar = {
-            BottomBar()
-        }
     ) {
         paddingValues ->
         Column(modifier = Modifier.fillMaxSize().padding(paddingValues).padding(16.dp).verticalScroll(rememberScrollState())) {

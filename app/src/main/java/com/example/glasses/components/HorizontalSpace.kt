@@ -1,4 +1,4 @@
-package com.example.glasses.common
+package com.example.glasses.components
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.width

@@ -21,9 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.glasses.ProductsViewModel
-import com.example.glasses.common.BottomBar
-import com.example.glasses.common.MainTitle
-import com.example.glasses.common.ProductItem
+import com.example.glasses.components.BottomNavigationBar
+import com.example.glasses.components.MainTitle
+import com.example.glasses.components.ProductItem
 
 
 @SuppressLint("ViewModelConstructorInComposable")
@@ -38,7 +38,7 @@ fun Products(navController: NavController) {
                     .fillMaxWidth()
                     .border(1.dp, Color.LightGray)
             ) {
-                BottomBar()
+                BottomNavigationBar(navController = navController)
             }
 
         }

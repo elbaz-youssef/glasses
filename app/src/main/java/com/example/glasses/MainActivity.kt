@@ -8,14 +8,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.compose.rememberNavController
 import com.example.glasses.navigation.NavigationStack
-import com.example.glasses.screens.Products
 import com.example.glasses.ui.theme.TestTheme
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,10 +34,19 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
 @Preview(showBackground = true, heightDp = 1000)
 @Composable
 fun GreetingScreenPreview() {
     TestTheme(dynamicColor = false) {
-        Products(navController = rememberNavController())
+        val systemUiController = rememberSystemUiController()
+        SideEffect {
+            systemUiController.setNavigationBarColor(
+                color = Color.Transparent,
+            )
+        }
+        NavigationStack()
     }
 }
+
+

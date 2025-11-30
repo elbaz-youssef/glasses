@@ -31,12 +31,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.glasses.ProductsViewModel
-import com.example.glasses.SizeInfo
-import com.example.glasses.common.ColorBox
-import com.example.glasses.common.HorizontalSpace
-import com.example.glasses.common.PrimaryButton
-import com.example.glasses.common.SizeBox
-import com.example.glasses.common.VerticalSpace
+import com.example.glasses.models.SizeInfo
+import com.example.glasses.components.ColorBox
+import com.example.glasses.components.HorizontalSpace
+import com.example.glasses.components.PrimaryButton
+import com.example.glasses.components.SizeBox
+import com.example.glasses.components.VerticalSpace
 
 @SuppressLint("ViewModelConstructorInComposable")
 @Composable
